@@ -1,104 +1,26 @@
-{
-  "description": "Опис предметної області",
-  "type": "object",
-  "properties": {
-    "administrator": {
-      "description": "Адміністратор",
-      "type": "object",
-      "properties": {
-        "database": {
-          "description": "База даних",
-          "type": "object",
-          "properties": {
-            "ddataK": {
-              "description": "Назва курсу"
-            },
-            "ddataB": {
-              "description": "Стандарти безпеки праці"
-            },
-            "kursInfo": {
-              "description": "Курси",
-              "type": "object",
-              "properties": {
-                "kabout": {
-                  "description": "Опис курсу"
-                },
-                "kprice": {
-                  "description": "Вартість"
-                },
-                "assigneeIT": {
-                  "description": "Представник ІТ-школи",
-                  "type": "object",
-                  "properties": {
-                    "aname": {
-                      "description": "Ім'я"
-                    },
-                    "awork": {
-                      "description": "Стаж роботи"
-                    }
-                  },
-                  "required": [
-                    "aname",
-                    "awork"
-                  ]
-                },
-                "bezpekaInfo": {
-                  "description": "Безпека праці",
-                  "type": "object",
-                  "properties": {
-                    "bdocuments": {
-                      "description": "Нормативні документи"
-                    }
-                  },
-                  "required": [
-                    "bdocuments"
-                  ]
-                }
-              },
-              "required": [
-                "kabout",
-                "kprice",
-                "assigneeIT"
-              ]
-            }
-          },
-          "required": [
-            "ddataK",
-            "ddataB"
-          ]
+{ "admistrator":
+		{
+			"database": {
+        "ddataK": "Phython_10",
+        "ddataB": "ДСТУ 2282-93 Система стандартів безпеки праці. Устаткування технологічне для виробництва твердих сирів. Вимоги безпеки",
+        "kursInfo":{
+          "kabout":"Курс Python дасть вам не лише основні навички, необхідні для роботи. Ми готуємо вас до повноцінного входу до професії IT-фахівця. За 33 тижні навчання ви освоїте потрібні професійні навички, навчитеся спілкуванню з колегами та замовниками, підвищите особисту ефективність та освоїте достатній для роботи рівень англійської",
+          "kprice": "26200",
+          "assigneeIT":{
+            "aname":"Петро",
+            "awork":"12"
+          }
+        },
+        "bezpekaInfo":{
+          "bdocuments":" Устаткування технологічне для виготовлення твердих сирів (далі устаткування), яке використовується самостійно або в складі комплексів, комплектів та ліній повинно відповідати вимогам ГОСТ 12.1.004, ГОСТ 12.1.005, ГОСТ 12.1.010, ГОСТ 12.1.041, ГОСТ 12.2.003, ГОСТ 12.2.007.0, ГОСТ 12.2.007.7, ГОСТ 12.2.049, ГОСТ 12.2.061, ГОСТ 12.2.062, ГОСТ 12.2.063, ГОСТ 12.2.124, ГОСТ 26582, чинних санітарних норм та правил, затверджених у встановленому порядку Міністерством охорони здоров’я, та цього стандарту."
         }
-      },
-      "required": [
-        "database"
-      ]
-    },
-    "account": {
-      "description": "Обліковий запис",
-      "type": "object",
-      "properties": {
-        "aname": {
-          "description": "Ім'я"
-        },
-        "abirthday": {
-          "description": "Дата народження"
-        },
-        "aphonenumb": {
-          "description": "Номер телефону"
-        },
-        "ae-mail": {
-          "description": "e-mail"
-        },
-        "user": {
-          "description": "Користувач"
-        }
-      },
-      "required": [
-        "aname",
-        "abirthday",
-        "aphonenumb",
-        "ae-mail",
-        "user"
-      ]
+      }
+		},
+    "account":{
+      "aname":"Петро",
+      "abirthday":"28.11.2002",
+      "aphonenumb":"+380968381279",
+      "ae-mail":"mcpetya@gail.com",
+      "user":"Petro"
     }
-  }
 }
